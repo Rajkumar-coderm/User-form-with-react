@@ -1,0 +1,80 @@
+body{
+    background-image: url("body-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.UserData{
+    margin: 0px;
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+}
+
+.UserData input{
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.DataMenu table,th{
+    background-color: rgb(147, 207, 56);
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+
+.container table,tr,td{
+    background-color: blanchedalmond;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.App{
+    border-radius: 10px;
+    margin: 100px 500px 0 500px;
+    background-color: #ecdfdf;
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center; 
+    justify-content: center;
+    gap: 90px; 
+}
+
+
+
+.container table tr{
+    width: 80;
+    display: flex;
+}
+
+.f-name-main,.l-name-main{
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+.email-main{
+    width: 400px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+.f-name, .l-name{
+    width: 200px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.email{
+    font-size: 25px;
+    padding: 10px;
+    width: 400px;
+}
