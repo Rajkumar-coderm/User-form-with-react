@@ -11,7 +11,7 @@ class User extends Component {
     }
 
     handler = (e) => {
-        // console.log(e.target.value);
+        console.log(e);
         var id = e.target.id
         var c = {}
         c[id] = e.target.value
@@ -22,25 +22,26 @@ class User extends Component {
         if (e.key == "Enter"){
         var data = this.state
         var myArr = data.maiData
-        delete data.maiData
-        myArr.push(data)
-        this.setState(
-            { maiData: myArr, firstName: "", lastName: "", email: "" }
-        )
-        }
+        if (data.firstName != "" && data.lastName != "" && data.email != ""){
+            delete data.maiData
+            myArr.push(data)
+            this.setState(
+                { maiData: myArr, firstName: "", lastName: "", email: "" }
+            )
+            }
+    }
     }
     onsubmith2 = (e) => {
         var data = this.state
         var myArr = data.maiData
-        delete data.maiData
-        myArr.push(data)
-        this.setState(
-            { maiData: myArr, firstName: "", lastName: "", email: "" }
-        )
+        if (data.firstName != "" && data.lastName != "" && data.email != ""){
+            delete data.maiData
+            myArr.push(data)
+            this.setState(
+                { maiData: myArr, firstName: "", lastName: "", email: "" }
+            )
+        }
     }
-
-  
-
     render() {
         var data1 = this.state.maiData.map((item) => {
             return <>
